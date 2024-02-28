@@ -13,11 +13,11 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    question: {
+    topic: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    answer: {
+    description: {
       type: DataTypes.STRING,
     },
     date_created: {

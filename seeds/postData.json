@@ -1,10 +1,10 @@
 [
     {
-        "question": "What is MVC?",
-        "answer": "Model-view-controller."
+        "topic": "What is MVC?",
+        "description": "Model-view-controller."
     },
     {
-        "question": "What is ORM?",
-        "answer": "Object-relational mapping."
+        "topic": "What is ORM?",
+        "description": "Object-relational mapping."
     }
 ]

@@ -2,14 +2,14 @@
 const newPost = async (event) => {
   event.preventDefault();
 
-  const question = document.querySelector('#post-question').value.trim();
-  const answer = document.querySelector('#post-answer').value.trim();
+  const topic = document.querySelector('#post-topic').value.trim();
+  const description = document.querySelector('#post-desc').value.trim();
 
-  // Post needs to have a question and answer to be posted //
-  if (question && answer) {
+  // Post needs to have a topic and description to be posted //
+  if (topic && description) {
     const response = await fetch(`/api/posts`, {
       method: 'POST',
-      body: JSON.stringify({ question, answer }),
+      body: JSON.stringify({ topic, description }),
       headers: {
         'Content-Type': 'application/json',
       },
