@@ -1,12 +1,9 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
+<img src="images/tech-blog-img2.jpg" alt="Convention Image">
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a Blog Post:</h3>
+<div class="row justify-space-between-md">
+  <div class="create-card">
+    <h2 style="font-size: 20px; text-align: center;">Welcome, {{name}}!</h2>
+    <h2 class="page-title">Create a Blog Post:</h2>
 
     <form class="form new-post-form">
       <div class="form-group">
@@ -24,16 +21,16 @@
   </div>
 
   {{#if posts.length}}
-  <div class="col-md-6 post-list">
-    <h3>Current Posts:</h3>
+  <div class="create-card post-list">
+    <h2>Current Posts:</h2>
 
     {{#each posts as |post|}}
-    <div class="row mb-2">
+    <div class="row mb-3">
       <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.question}}</a></h4>
+        <label href="/post/{{post.id}}">{{truncate post.question 10}}</label>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete</button>
       </div>
     </div>
     {{/each}}
@@ -42,3 +39,4 @@
 </div>
 
 <script src="./js/post.js"></script>
+
