@@ -7,7 +7,7 @@ const withAuth = require('../utils/auth');
 // Run a get request //
 router.get('/', async (req, res) => {
     try {
-        // Get all projects and JOIN with user data //
+        // Get all posts and JOIN with user data //
         // Include name to specifically add that associated name //
         const postData = await Post.findAll({
             include: [
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 
         // Pass serialized data and session flag into template //
         res.render('homepage', {
-            projects,
+            posts,
             logged_in: req.session.logged_in
         });
     } catch (err) {
