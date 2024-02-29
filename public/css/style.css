@@ -40,7 +40,6 @@ h1 {
   font-size: 35px;
   position: relative;
   margin: 1% 1%;
-  cursor: pointer;
   -webkit-text-stroke: 0.5px var(--dark);
   text-shadow: 2px 2px 4px var(--dark);
 }
@@ -50,7 +49,6 @@ h2 {
   position: relative;
   margin: 1% 1%;
   margin-bottom: 5%;
-  cursor: pointer;
   color: var(--light);
   -webkit-text-stroke: 0.5px var(--dark);
   text-shadow: 2px 2px 4px var(--dark);
@@ -85,7 +83,6 @@ nav a:hover {
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
   text-decoration: none;
   font-size: 100%;
   transition: color 0.1s;

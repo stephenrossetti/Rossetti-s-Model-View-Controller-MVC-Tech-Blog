@@ -1,6 +1,5 @@
 <div class="row justify-space-between-md">
   <div class="create-card">
-    <h2 style="font-size: 20px; text-align: center;">Welcome, {{name}}!</h2>
     <h2 class="page-title">Create a Blog Post:</h2>
 
     <form class="form new-post-form">
@@ -25,11 +24,10 @@
 
     {{#each posts as |post|}}
     <div class="row mb-3">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <a href="/post/{{post.id}}">{{truncate post.topic 15}}</a>
       </div>
-      <div class="col-md-6">
-        <button class="btn btn-sm btn-info" data-id="{{post.id}}">Update</button>
+      <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete</button>
       </div>
     </div>
