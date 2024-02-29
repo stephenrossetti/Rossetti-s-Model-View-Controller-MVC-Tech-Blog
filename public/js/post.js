@@ -7,7 +7,7 @@ const newPost = async (event) => {
 
   // Post needs to have a topic and description to be posted //
   if (topic && description) {
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/post`, {
       method: 'POST',
       body: JSON.stringify({ topic, description }),
       headers: {
@@ -29,7 +29,7 @@ const deletePost = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/post/${id}`, {
       method: 'DELETE',
     });
 
@@ -52,7 +52,7 @@ const updatePost = async (event) => {
   const topic = document.querySelector('#post-topic').value.trim();
   const description = document.querySelector('#post-desc').value.trim();
 
-  const response = await fetch(`/api/posts/${postID}`, {
+  const response = await fetch(`/api/post/${postID}`, {
       method: 'PUT',
       body: JSON.stringify({ topic, description }),
       headers: {

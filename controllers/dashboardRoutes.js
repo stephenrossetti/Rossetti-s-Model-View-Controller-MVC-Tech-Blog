@@ -7,12 +7,13 @@ router.get('/', async (req, res) => {
         const userData = await Post.findAll({
             where : {
                 user_id : req.session.user_id
-            }, include : [{
+            },
+            include : [{
                 model: Comment, 
                 include : {
                     model : User,
-                    attributes : ['user_name']
-                }
+                    attributes : ['name']
+                },
             }]
         });
 
@@ -33,11 +34,11 @@ router.get('/:id', async (req, res) => {
                 model: Comment, 
                 include : {
                     model : User,
-                    attributes : ['user_name']
+                    attributes : ['name']
                 }}, 
                 {
                 model: User, 
-                attributes: ['user_name']
+                attributes: ['name']
                 }
         ]});
         const updatePost = postData.get({ plain: true });

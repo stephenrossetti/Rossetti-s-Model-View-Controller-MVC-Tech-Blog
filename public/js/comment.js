@@ -6,20 +6,20 @@ const newComment = async (event) => {
     const url = window.location.toString().split('/');
     const postID = url[4];
 
-    const contents = document.querySelector('#comment').value.trim();
+    const comments = document.querySelector('#comment').value.trim();
   
     // Comment needs to exist  //
-    if (contents) {
-      const response = await fetch(`/api/comments/${postID}`, {
+    if (comments) {
+      const response = await fetch(`/api/comment/${postID}`, {
         method: 'POST',
-        body: JSON.stringify({ contents }),
+        body: JSON.stringify({comments}),
         headers: {
           'Content-Type': 'application/json',
         },
       });
   
       if (response.ok) {
-        document.location.replace(`/posts/${postID}`);
+        document.location.replace(`/post/${postID}`);
       } else {
         alert('Failed to create comment');
       }

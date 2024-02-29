@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) => {
             }]
         });
         const singlePost = postData.get({ plain: true });
-        res.status(200).json({ singlePost });
+        res.status(200).json({singlePost});
     } catch (err) {
         res.status(400).json(err);
     }
@@ -61,7 +61,7 @@ router.put('/:id', withAuth, async (req, res) => {
                 id: req.params.id
             }
         });
-        res.status(200).json({ postData });
+        res.status(200).json(postData);
     } catch (err) {
         res.status(400).json(err);
     }

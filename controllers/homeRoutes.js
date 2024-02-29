@@ -33,7 +33,7 @@ router.get('/', async (req, res) => {
 });
 
 // Route for specific post called out by ID //
-router.get('/posts/:id', async (req, res) => {
+router.get('/post/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [
@@ -41,6 +41,7 @@ router.get('/posts/:id', async (req, res) => {
                     model: User,
                     model: Comment,
                     include: [{
+                        model: User,
                     attributes: ['name']
                     }]
                 },
@@ -50,7 +51,7 @@ router.get('/posts/:id', async (req, res) => {
         const singlePost = postData.get({ plain: true });
 
         res.render('post', {
-            ...singlePost,
+            singlePost,
             logged_in: req.session.logged_in
         });
     } catch (err) {

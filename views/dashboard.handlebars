@@ -25,7 +25,7 @@
     {{#each posts as |post|}}
     <div class="row mb-3">
       <div class="col-md-8">
-        <a href="/post/{{post.id}}">{{truncate post.topic 15}}</a>
+        <a href="/posts/{{post.id}}">{{truncate post.topic 15}}</a>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete</button>

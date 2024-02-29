@@ -1,7 +1,7 @@
 // Logout js will send POST request to api/user/logout route //
 // This route effectively deletes the session as logs user out and sends to homepage //
 const logout = async () => {
-    const response = await fetch('/api/users/logout', {
+    const response = await fetch('/api/user/logout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
     });

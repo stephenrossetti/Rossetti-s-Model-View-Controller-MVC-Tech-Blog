@@ -8,7 +8,7 @@ const loginForm = async (event) => {
 
     if (email && password) {
         // Send a POST request to the API endpoint
-        const response = await fetch('/api/users/login', {
+        const response = await fetch('/api/user/login', {
             method: 'POST',
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' },
@@ -34,7 +34,7 @@ const signupForm = async (event) => {
 
     // Only create a new user if all inputs are true //
     if (name && email && password) {
-        const response = await fetch('/api/users', {
+        const response = await fetch('/api/user', {
             method: 'POST',
             body: JSON.stringify({ name, email, password }),
             headers: { 'Content-Type': 'application/json' },
