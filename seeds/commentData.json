@@ -1,0 +1,17 @@
+[
+    {
+        "contents": "This is comment by Mark about MVC ",
+        "user_id": "1",
+        "post_id": "1"
+    },
+    {
+        "contents": "This is comment by Steve about ORM",
+        "user_id": "2",
+        "post_id": "2"
+    },
+    {
+        "contents": "This is comment by Bill about Computer Science ",
+        "user_id": "3",
+        "post_id": "3"
+    }
+]

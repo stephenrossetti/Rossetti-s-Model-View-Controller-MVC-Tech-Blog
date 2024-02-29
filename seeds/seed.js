@@ -1,9 +1,10 @@
 // Require the connection to run sequelize for seed data //
 const sequelize = require('../config/connection');
-const { User, Post } = require('../models');
+const { User, Post, Comment } = require('../models');
 
 const userData = require('./userData.json');
 const postData = require('./postData.json');
+const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -16,15 +17,16 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  // Loops through all data by post in postData array //
-  // Create a new post record in database called Post using post data //
-  // Set up a random user ID data fpost that is a foreign key to User for "ID" // 
-  for (const post of postData) {
-    await Post.create({
-      ...post,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  // Same for posts and comments // 
+  const posts = await Post.bulkCreate(postData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  const comments = await Comment.bulkCreate(commentData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };

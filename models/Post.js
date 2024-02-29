@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 class Post extends Model {}
 
 // Create table data for Post //
-// ID, question, answer, date_created, user_id as foreign key //
+// ID, topic, descr, date_created, user_id as foreign key //
 Post.init(
   {
     id: {

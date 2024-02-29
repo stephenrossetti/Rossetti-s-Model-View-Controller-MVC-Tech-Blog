@@ -1,15 +1,18 @@
 [
     {
         "topic": "What is MVC?",
-        "description": "Model-view-controller."
+        "description": "Model-view-controller.",
+        "user_id": "1"
     },
     {
         "topic": "What is ORM?",
-        "description": "Object-relational mapping."
+        "description": "Object-relational mapping.",
+        "user_id": "2"
     },
     {
         "topic": "What is computer science and why are we studying it?",
-        "description": "Fundamental areas of computer science Computer science is the study of computation, information, and automation. Computer science spans theoretical disciplines to applied disciplines."
+        "description": "Fundamental areas of computer science Computer science is the study of computation, information, and automation. Computer science spans theoretical disciplines to applied disciplines.",
+        "user_id": "3"
     }
 
 ]
