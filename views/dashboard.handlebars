@@ -1,7 +1,7 @@
+<img src="images/tech-blog-img2.jpg" alt="Convention Image">
 <div class="row justify-space-between-md">
   <div class="create-card">
     <h2 class="page-title">Create a Blog Post:</h2>
-
     <form class="form new-post-form">
       <div class="form-group">
         <label for="post-topic">Post Topic:</label>
@@ -25,7 +25,7 @@
     {{#each posts as |post|}}
     <div class="row mb-3">
       <div class="col-md-8">
-        <a href="/posts/{{post.id}}">{{truncate post.topic 15}}</a>
+        <a href="/post/{{post.id}}">{{truncate post.topic 15}}</a>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete</button>

@@ -1,16 +1,16 @@
 [
     {
-        "comment": "This is comment by Mark about MVC ",
+        "comment": "This is a really cool topic!",
         "user_id": "1",
         "post_id": "1"
     },
     {
-        "comment": "This is comment by Steve about ORM",
+        "comment": "I don't agree with you!",
         "user_id": "2",
         "post_id": "2"
     },
     {
-        "comment": "This is comment by Bill about Computer Science ",
+        "comment": "Very interesting! Have you thought about being a coder?",
         "user_id": "3",
         "post_id": "3"
     }

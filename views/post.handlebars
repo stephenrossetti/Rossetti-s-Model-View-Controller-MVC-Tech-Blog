@@ -1,17 +1,30 @@
 <div class="card">
   <div>
     <a style="font-size: 1.5rem; background-color: rgb(16, 48, 88);">{{singlePost.topic}}</a>
-    <p class="time"><i>Posted by {{post.name}} on {{format_date singlePost.date_created}}</i></p>
+    <p class="time"><i>Posted by {{singlePost.name}} on {{format_date singlePost.date_created}}</i></p>
   </div>
   <div>
     <p> {{singlePost.description}}</p>
   </div>
-  {{#if logged_in}}
-  <p>
-    <button class="btn btn-primary add-comment">Add a Comment</button>
-  </p>
-  {{/if}}
+
+  {{#each singlePost.comments as |comments| }}
+  {{> comment-details}}
+  {{/each}}
+
+  <div>
+    {{#if logged_in}}
+    <div class="commentCard">
+      <input class="box" placeholder="Add a comment" id="comment"></input>
+      <div>
+        <button class="btn btn-primary" id="add-comment" data-id="{{singlePost.id}}">Add Comment</button>
+      </div>
+    </div>
+    {{else}}
+    <a href="/login" class="btn btn-primary" id="comment-login">Add Comment</a>
+    {{/if}}
+  </div>
 </div>
 
-<script src="../public/js/comment.js"></script>
-<script src="../public/js/post.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/comment.js"></script>
+
