@@ -10,7 +10,7 @@ const newComment = async (event) => {
   
     // Comment needs to exist  //
     if (contents) {
-      const response = await fetch(`/api/comment/${postID}`, {
+      const response = await fetch(`/api/comments/${postID}`, {
         method: 'POST',
         body: JSON.stringify({ contents }),
         headers: {
@@ -19,9 +19,9 @@ const newComment = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace(`/post/${postID}`);
+        document.location.replace(`/posts/${postID}`);
       } else {
-        alert('Failed to create post');
+        alert('Failed to create comment');
       }
     }
   };

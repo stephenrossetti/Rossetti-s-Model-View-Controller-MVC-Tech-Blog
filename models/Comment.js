@@ -6,7 +6,7 @@ class Comment extends Model { }
 // Create table data for Comment //
 // ID, content, user_id and post_id  as foreign key //
 // Need the user and post id to make sure only current user can edit //
-Post.init(
+Comment.init(
     {
         id: {
             type: DataTypes.INTEGER,

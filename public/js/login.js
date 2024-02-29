@@ -28,7 +28,7 @@ const signupForm = async (event) => {
     event.preventDefault();
 
     // Will have to make sure the handlebars use these ids //
-    const name = document.querySelector('#name-signup').value.trim();
+    const name = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
@@ -50,5 +50,4 @@ const signupForm = async (event) => {
 };
 
 document.querySelector('.login-form').addEventListener('submit', loginForm);
-
 document.querySelector('.signup-form').addEventListener('submit', signupForm);
