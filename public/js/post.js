@@ -69,5 +69,5 @@ const updatePost = async (event) => {
 
 // Add event listeners to initiate the actual functions //
 document.querySelector('.new-post-form').addEventListener('submit', newPost);
-document.querySelector('.post-list').addEventListener('click', deletePost);
-document.querySelector('.update-post').addEventListener('click', updatePost);
+document.querySelector('.delete-post-btn').addEventListener('click', deletePost);
+document.querySelector('.update-post-btn').addEventListener('click', updatePost);

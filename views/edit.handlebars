@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="commentCard">
+        <div>
+            <a style="font-size: 1.5rem; background-color: rgb(16, 48, 88);">Topic:</a>
+            <input value="{{editPost.topic}}"></input>
+        </div>
+        <div>
+            <a style="font-size: 1.5rem; background-color: rgb(16, 48, 88);">Description:</a>
+            <input class="wrap" value="{{editPost.description}}"></input>
+            <p class="time"><i>Updated on {{format_date editPost.date_created}}</i></p>
+        </div>
+
+        <button class="btn btn-primary update-post-btn" data-id="{{editPost.id}}">Update
+            Post</button>
+    </div>
+</div>
+
+
+<script src="/js/post.js"></script>

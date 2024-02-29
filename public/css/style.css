@@ -31,7 +31,7 @@ p.time {
 header {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
-  background:var(--header);
+  background: var(--header);
   color: var(--light);
   align-items: center;
 }
@@ -179,4 +179,13 @@ nav a:hover {
 .box {
   margin: 10px 0px;
   width: 100%;
+}
+
+.btn-success {
+  background-color: yellow;
+}
+
+input {
+  width: 100%;
+  height: auto;
 }

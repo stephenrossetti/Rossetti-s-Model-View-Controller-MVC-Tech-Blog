@@ -41,9 +41,10 @@ router.get('/:id', async (req, res) => {
                 attributes: ['name']
                 }
         ]});
-        const updatePost = postData.get({ plain: true });
-            res.render('updatePost', {
-                updatePost,
+        const editPost = postData.get({ plain: true });
+            res.render('edit', {
+                editPost,
+                logged_in: req.session.logged_in, 
             });
         } catch (err) {
             res.status(500).json(err);
