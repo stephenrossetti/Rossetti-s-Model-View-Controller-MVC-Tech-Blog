@@ -28,7 +28,7 @@
 <details>
 <summary>Table of Contents</summary>
 <ol>
-<li><a href="#overview-of-rossetti-s-tech-blog"> Overview of MVC Tech Blog</a></li>
+<li><a href="#overview-of-rossettis-tech-blog"> Overview of MVC Tech Blog</a></li>
 <li><a href="#user-story">User Story</a></li>
 <li><a href="#acceptance-criteria">Acceptance Criteria</a></li>
 <li><a href="#getting-started">Getting Started</a><li>
@@ -37,7 +37,7 @@
 <li><a href="#installation">Installation</a></li>
 </ul>
 </li>
-<li><a href="#technology-used ">Technology Used</a></li>
+<li><a href="#built-with-&-technology-used">Technology Used</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#links">Links</a></li>
 <li><a href="#contributing">Contributing</a></li>
