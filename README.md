@@ -3,9 +3,6 @@
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![Forks][forks-shield]][forks-url]
 
 <br />
 <div align="center">
@@ -15,7 +12,7 @@
 
 <h3 align="r">Model View Controller (MVC) Tech Blog</h3>
 <p align="center">
-    Login, or Sign-Up, and starting posting here!
+    Login/Sign-up and starting posting here!
 <br />
 
 <br />
@@ -222,6 +219,17 @@ N/A
 ## Contact Us
 
 Contact me ([Stephen Rossetti](https://github.com/stephenrossetti)) if you have any questions or feedback.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Credits
+
+Coding help from external sources:
+
+- Utilized Module-14-Mini-Project (Crowdfunding App) as a template to begin coding the website. Included most of the functionality except for comment models, relationships, and javascript/controllers for adding comments and editing blog posts.
+- Utilized my own Project-2 (Convention Planner) app for design and handlebars.
+- Utilzied TAs and office hours for help with front-end/back-end GET requests that involved multiple models. Also, applying those GET requests within handlebars.
+- Utilized StackOverflow for miscellaneous code help and ideas.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
