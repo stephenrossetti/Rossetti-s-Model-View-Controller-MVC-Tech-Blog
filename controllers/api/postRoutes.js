@@ -4,6 +4,7 @@ const withAuth = require('../../utils/auth');
 
 // Get all Posts //
 // Need to get/include all Comments and User from their models too //
+// User is needed for name specifically to add to the post //
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
@@ -22,13 +23,13 @@ router.get('/', async (req, res) => {
 });
 
 // Get Post by ID //
+// Need individual post ID for adding comments or editing posts //
 router.get('/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [
                 {
                     model: Comment
-
                 },
                 {
                     model: User

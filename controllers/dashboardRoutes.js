@@ -1,4 +1,5 @@
 // Separate routes for the main dashboard //
+// This is more individualized for the signed in user //
 const router = require('express').Router();
 const { Post, User, Comment  } = require('../models');
 

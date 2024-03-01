@@ -1,4 +1,4 @@
-// Requilize for database data and dotenv to encrypt env inputs //
+// Sequilize for database data and dotenv to encrypt env inputs //
 const Sequelize = require('sequelize');
 require('dotenv').config();
 

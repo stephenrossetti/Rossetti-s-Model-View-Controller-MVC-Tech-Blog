@@ -1,3 +1,5 @@
+// Used format_date code from activities //
+// Used StackOverflow for help with the truncate function //
 module.exports = {
     format_date: (date) => {
         // Format date as MM/DD/YYYY

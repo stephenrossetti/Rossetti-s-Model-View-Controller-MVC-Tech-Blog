@@ -8,8 +8,6 @@ const newComment = async (event) => {
 
   const commentText = document.querySelector('#comment').value.trim();
 
-  console.log('Comment Text:', commentText);
-
   // Comment needs to exist  //
   if (commentText) {
     const response = await fetch(`/api/comment/${postID}`, {
@@ -20,11 +18,10 @@ const newComment = async (event) => {
       },
     });
 
-    console.log('Response:', response);
-
     if (!response.ok) {
+      // Had trouble with the code, so I included a console log here to confirm //
       const responseBody = await response.text();
-      console.log('Response Body:', responseBody); // Log the response body
+      console.log('Response Body:', responseBody);
 
       alert('Failed to create comment');
     } else {

@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 class Comment extends Model { }
 
 // Create table data for Comment //
-// ID, content, user_id and post_id  as foreign key //
+// ID, comment, user_id and post_id  as foreign key //
 // Need the user and post id to make sure only current user can edit //
 Comment.init(
     {

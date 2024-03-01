@@ -1,3 +1,4 @@
+// Create a route for comments since we will need to grab specific comment IDs to attached to blog posts //
 const router = require('express').Router();
 const { Comment } = require('../../models');
 

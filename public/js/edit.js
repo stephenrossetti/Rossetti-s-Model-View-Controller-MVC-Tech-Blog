@@ -24,6 +24,7 @@ const updatePost = async (event) => {
     }
 };
 
+// Ran a for each function since new buttons will be created with a new post. Otherwise the event listener would only work on the first post //
 document.querySelectorAll('.update-post-btn').forEach(button => {
     button.addEventListener('click', updatePost);
 });

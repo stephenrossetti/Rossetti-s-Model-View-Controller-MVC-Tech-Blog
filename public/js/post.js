@@ -42,6 +42,7 @@ const deletePost = async (event) => {
 };
 
 // Add event listeners to initiate the actual functions //
+// Ran a for each function since new buttons will be created with a new post. Otherwise the event listener would only work on the first post //
 document.querySelector('.new-post-form').addEventListener('submit', newPost);
 document.querySelectorAll('.delete-post-btn').forEach(button => {
   button.addEventListener('click', deletePost);
