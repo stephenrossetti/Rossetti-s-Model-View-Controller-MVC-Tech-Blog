@@ -28,14 +28,10 @@
 <details>
 <summary>Table of Contents</summary>
 <ol>
-<li>
-<a href="#overview-of-convention-planner"> Overview of  Convention Planner</a>
-<ul>
-<li><a href="#built-with">Built With</a></li>
-</ul>
-</li>
-<li>
-<a href="#getting-started">Getting Started</a>
+<li><a href="#overview-of-rossetti-s-tech-blog"> Overview of MVC Tech Blog</a></li>
+<li><a href="#user-story">User Story</a></li>
+<li><a href="#acceptance-criteria">Acceptance Criteria</a></li>
+<li><a href="#getting-started">Getting Started</a><li>
 <ul>
 <li><a href="#prerequisites">Prerequisites</a></li>
 <li><a href="#installation">Installation</a></li>
@@ -44,10 +40,10 @@
 <li><a href="#technology-used ">Technology Used</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#links">Links</a></li>
-<li><a href="#roadmap">Roadmap</a></li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#license">License</a></li>
-<li><a href="#contact-us ">Contact Us </a></li>
+<li><a href="#contact-us">Contact Us </a></li>
+<li><a href="#credits">Credits</a></li>
 <li><a href="#acknowledgments">Acknowledgments</a></li>
 </ol>
 </details>
@@ -106,7 +102,7 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+## Built With & Technology Used
 
 - ![MySQL2](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
@@ -124,10 +120,6 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 - ![Heroku](https://ziadoua.github.io/m3-Markdown-Badges/badges/Heroku/heroku1.svg)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Technology Used
-New Technology discovered:
 - ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
 ## Getting Started
