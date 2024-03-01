@@ -1,7 +1,7 @@
 <div class="card">
   <div>
     <a style="font-size: 1.5rem; background-color: rgb(16, 48, 88);">{{singlePost.topic}}</a>
-    <p class="time"><i>Posted by {{singlePost.name}} on {{format_date singlePost.date_created}}</i></p>
+    <p class="time"><i>Posted by {{singlePost.user.name}} on {{format_date singlePost.date_created}}</i></p>
   </div>
   <div>
     <p> {{singlePost.description}}</p>

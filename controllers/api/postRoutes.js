@@ -25,15 +25,18 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
-            include: [{
-                model: Comment,
-                include: [{
+            include: [
+                {
+                    model: Comment
+
+                },
+                {
                     model: User
-                }]
-            }]
+                }
+            ]
         });
         const singlePost = postData.get({ plain: true });
-        res.status(200).json({singlePost});
+        res.status(200).json({ singlePost });
     } catch (err) {
         res.status(400).json(err);
     }
