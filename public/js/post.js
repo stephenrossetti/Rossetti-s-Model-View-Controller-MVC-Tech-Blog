@@ -41,35 +41,8 @@ const deletePost = async (event) => {
   }
 };
 
-// Edit a pre-existing post //
-const updatePost = async (event) => {
-  event.preventDefault();
-
-  // Similar to adding comment, this will obtain the specific :ID from URL //
-  const url = window.location.toString().split('/');
-  const postID = url[4];
-
-  const topic = document.querySelector('#post-topic').value.trim();
-  const description = document.querySelector('#post-desc').value.trim();
-
-  const response = await fetch(`/api/post/${postID}`, {
-      method: 'PUT',
-      body: JSON.stringify({ topic, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    if (response.ok) {
-      document.location.replace('/dashboard');
-    } else {
-      alert('Failed to update post');
-    }
-  };
-
 // Add event listeners to initiate the actual functions //
 document.querySelector('.new-post-form').addEventListener('submit', newPost);
 document.querySelectorAll('.delete-post-btn').forEach(button => {
   button.addEventListener('click', deletePost);
 });
-document.querySelector('.update-post-btn').addEventListener('click', updatePost);
